@@ -7,4 +7,6 @@ def safe_print_list(my_list=[], x=0):
             result +=1
         except Exception as  error:
             break
-    print(result)
+
+    print("")
+    return result
