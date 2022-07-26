@@ -4,7 +4,7 @@
 
 
 class Rectangle:
-    """A plane with 4 perpendicular sides.
+    """A plane figure with 4 perpendicular sides.
     """
     def __init__(self, width=0, height=0):
         """Initializes a Rectangle with a given width and height.
@@ -73,3 +73,16 @@ class Rectangle:
             return 0
         else:
             return 2 * (self.width + self.height)
+
+    def __str__(self):
+        '''Returns a string representation of this Rectangle.
+        Returns:
+            str: A string representation of this Rectangle.
+        '''
+        if self.width == 0 or self.height == 0:
+            return ''
+        else:
+            res = list(map(
+                lambda x: '#' * self.width + '\n' * (x != self.height - 1),
+                range(self.height)))
+            return ''.join(res)
