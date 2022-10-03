@@ -1,6 +1,8 @@
 #!/usr/bin/node
 module.exports = {
-  addMeMaybe: function (n, f) {
-    return f(n + 1);
+  callMeMoby: function (n, f) {
+    for (let i = 0; i < n; i++) {
+      f();
+    }
   }
 };
