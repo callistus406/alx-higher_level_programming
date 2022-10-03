@@ -1,5 +1,5 @@
 #!/usr/bin/node
-let myArgs = process.argv.length - 2;
+const myArgs = process.argv.length - 2;
 if (myArgs === 0) {
   console.log('No argument');
 } else if (myArgs === 1) {
