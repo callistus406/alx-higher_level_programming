@@ -1,7 +1,7 @@
 #!/usr/bin/node
 
 const args = process.argv;
-function add(a, b) {
+function add (a, b) {
   if (isNaN(a) || isNaN(b)) {
     return NaN;
   } else {
